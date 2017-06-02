@@ -44,12 +44,31 @@ namespace Game
             {
                 moveX = spd;
             }
+            if (e.KeyCode == Keys.Space)
+            {
+                pictureBox2.Left = pictureBox1.Left;
+                pictureBox2.Top = pictureBox1.Top;
+            }
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            moveX = 0;
-            moveY = 0;
+            if (e.KeyCode == Keys.Up)
+            {
+                moveY = 0;
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                moveY = 0;
+            }
+            if (e.KeyCode == Keys.Left)
+            {
+                moveX = 0;
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                moveX = 0;
+            }
         }
     }
 }
